@@ -1,0 +1,58 @@
+Microsoft Dataverse is designed to let you quickly and easily create a data model
+ for your app, based on the tables and the table metadata that you include in your app.
+
+You cannot change the following after the table is created:
+    Schema name
+    Table type
+    Table ownership
+
+Best practice is to create tables from within a Dataverse solution. The table will inherit the publisher prefix from the solution.
+
+Table types
+
+Before creating tables in Dataverse, you should understand the different types of custom tables that you can create:
+    Standard: A table where you can store data and add to the navigation in model-driven apps. Most tables you create are standard tables.
+    Activity: Activity tables store interactions such as phone calls, tasks, and appointments. Dataverse has a set of activity tables. These tables share the same set of columns and share security privileges. Many of the table options, including the primary column, are fixed and can't be changed. Activity tables appear in the timeline on model-driven app forms.
+    Virtual: Virtual tables connect to data from an external data source such as Microsoft Azure SQL Database or a SharePoint List.
+    Elastic: Used when your table includes a large dataset, the elastic tables offer performance benefits over standard tables and are powered by Azure Cosmos DB. There are some considerations when to use them over other table types.
+
+After a table is created, the table type / table owernship can't be changed.
+
+Table Ownership
+    User or team owned: Actions that can be performed on these rows can be controlled at the user level.
+    Organization-owned: Access to the data is controlled at the organization level.
+
+You can't delete standard tables, but you can hide them. To hide a standard table, change the security role privileges for your organization to remove the Read privilege for that table.
+
+Differences between canvas and model-driven apps
+
+Model-driven apps can use all actions available on business rules, however not all business rule actions are available for canvas apps.
+    Show or hide columns.
+    Enable or disable columns.
+    Create business recommendations based on business intelligence.
+
+Security
+Instead of assigning each privilege to a user, you assign one or more Dataverse security roles to users. This simplifies management of user access.
+
+You can assign several built-in security roles:
+SysAdmin: full permission to customize the env
+Environment Maker: Can create new resources associated with an environment
+Basic User: Can run the app
+
+Dual-write & Virtual Entities type of connections to external data sources
+
+Dual-write provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse.
+Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps.
+Dual-write also supports online and offline mode, and it follows the no-code/low-code principle.
+
+Virtual Entities
+the data for virtual entities doesn't reside in Dataverse.
+Instead, it continues to reside in the app where it belongs.
+Before CRUD operations can be performed on finance and operations entities from Dataverse, the entities must be made available as virtual entities in Dataverse (thanks to OData) Open Data Protocol
+ Power Apps portals can be used to build external-facing websites that enable collaboration scenarios for business processes in finance and operations apps.
+
+when to use Dual-write vs Virtual Entities?
+They're complementary technologies that are intended to work together.
+Dual-write is your best option when your data resides completely inside Dataverse (near-time interaction)
+Virtual entities seamlessly represent external data inside of Dataverse without need to replicate data.
+If your data is for read-only, this may be a more appropriate approach for you,
