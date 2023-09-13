@@ -1,0 +1,72 @@
+Model-driven app design is an approach that focuses on adding dashboards, forms, views, and charts to your apps.
+the components you add determine much of the layout.
+The emphasis is more on quickly viewing your business data and making decisions instead of on intricate app design.
+
+Model-driven apps have three design phases:
+    Model your business data (metadata-driven architecture)
+      you determine what data the app needs and how that data relates to other data
+    Define your business processes
+      Consistent processes help ensure that your app users can focus on their work and not worry about having to remember to perform a set of manual steps.
+    Build the app
+      you build your app by selecting and setting up the pages you need in the App Designer.
+
+Components
+
+Data Components
+    Table --> container for records
+    Column --> Property associated to a Table
+    Relationship --> 1:N / N:N
+    Choice Column --> Choice (one about of many) or Choices (many options)
+UI Components
+    APP --> components, properties, client type, URL
+    Site Map --> Specify the navigation for your app
+    Form --> set of items that orga trakcs for the table
+    View --> how list of records are displayed (columns shown, width, sort behavior, default filters)
+Logic Components
+    Business process flow --> online process to standarized business process (customer service request)
+    Workflow --> Workflows automate business processes without a user interface
+    Actions --> Actions are a type of process that lets you manually invoke actions
+    Business rule --> Used to apply rule or recommendation logic to a form, such as to set column requirements, hide columns, or validate data.
+    Power Automate Flow --> cloud-based service to create automate flows
+Visualization Components
+    Chart  --> simple graphic visualization of a view, form or added to dashboard
+    Dashboard  --> colelction of one or more graphic visualization
+    Embedded Power BI -->  Add embedded Power BI tiles and dashboards to your app.
+
+Design model-driven apps
+Factors to consider
+    Business requirements
+      Work with the app stakeholders to consider your security, accessibility, data, and design needs.
+      hierarchy security or row-level security
+      multi-factor authentication (government regulations)
+      Offline Mode
+    Data Model
+      what type of data will your solution be storing / collecting?
+      how this data relate with other data you are working on?
+      **If a column type needs to be changed to a different column type, (i.e. text column to an choice), then you will need to delete that column and recreate with the correct column type.
+    Business Logic
+      You can set Business Rules on your Dataverse tables (behavior at data layer)
+      or you can build Business Process Flows (you bring automation to your app and make it more of a guided experience than just a place to enter data).
+    Output
+      A common output need for apps is to visualize the data
+      Provide high-level snapshots of your data and allow them to use filters to dive deeper into the data if needed.
+
+Your primary design goal is to get your Microsoft Dataverse data model in order.
+With that in place, you can connect Power Apps,
+ and a Model-driven app will be created for you from that model.
+ Model-driven apps are created using the App Designer.
+
+Security roles define how different users access different types of records.
+
+To specify privileges
+Expand an existing predefined security role so that it includes privileges on rows that are based on the custom table.
+Create a custom security role to manage privileges for users of the app.
+
+Create 	Required to make a new record.
+Read 	Required to open a record to view the contents.
+Write 	Required to make changes to a record.
+Delete 	Required to permanently remove a record.
+Append 	Required to associate the current record with another record. For example, if users have Append rights on a note, they can attach the note to an opportunity. If there are many-to-many relationships, a user must have Append privilege for both tables being associated or disassociated.
+Append to 	Required to associate a record with the current record. For example, if users have Append To rights on an opportunity, they can add a note to the opportunity.
+Assign 	Required to give ownership of a record to another user.
+Share 	Required to give access to a record to another user while keeping your own access.
