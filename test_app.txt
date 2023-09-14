@@ -1,0 +1,50 @@
+Tools available for you to test your canvas apps include the Power Apps Test Studio
+This tool can help you write, organize, and automate your tests for canvas apps.
+, you can use Monitor to check network activity
+Execution phases in canvas apps
+  Authenticate the user:
+  Get metadata:
+  Initialize the app:
+  Render the screens:
+
+  All of these call flow gates can cause performance considerations and potential opportunities for optimization
+  the OData request goes directly to Dataverse, without going through Azure API Management, connectors, or data gateways.
+  Traditional: APP --> Azure API Management --> Data source in travel back
+  recommended: APP --> Dataverse
+
+  Sources of Slow performances
+  - App is client-heavy: operations like JSON, sort, GroupBy,
+  - Has long formula in OnStart: unnecessary bunch of data calls in screen
+  delegating the workload to the server is recommended when possible.
+  From the perspective of client memory consumption, it's important to make the client app lightweight.
+
+Bottleneck in the data source
+    The back-end machine hosting the data source is low on resources.
+    The back-end SQL instance has blockings, deadlocks, or resource contention.
+    The on-premises data gateway is unhealthy.
+
+Client browsers, devices, and locations
+encourage to use modern updated and supported browsers
+-  locate the data source near your largest user base (data gateway & data source close )
+- Debug published app setting enabled (republish your app with this setting disabled)
+
+
+Monitor
+ can use Monitor either to view events while building a new app in Power Apps Studio
+ to monitor published apps during runtime.
+
+ Watching the events as they occur in your app can help you understand the order of events and how your app is performing, to spot errors and diagnose problems faster.
+
+ Introducing Power Apps analytics
+
+  a series of reports providing a view into environment level usage, errors, service performance, and change management services to users.
+   You can access them by signing into the Power Platform admin center and select Analytics > Power Apps.
+   The Usage report is shown by default when logging into the admin center.
+
+Documentation
+Definitions
+Architecture and Design decisions
+Technical spec
+End-user (channels - tutorials)
+Internal Marketing
+Change Log

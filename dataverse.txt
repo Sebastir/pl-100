@@ -56,3 +56,55 @@ They're complementary technologies that are intended to work together.
 Dual-write is your best option when your data resides completely inside Dataverse (near-time interaction)
 Virtual entities seamlessly represent external data inside of Dataverse without need to replicate data.
 If your data is for read-only, this may be a more appropriate approach for you,
+
+
+columns
+- you should have less than a few hundred columns in a table.
+- Primary name is modifiable and friendlier for Business users  whereas Primary Key is a unique GUID
+
+Rollup columns:
+  - Max 100 for each organization
+  - Max 10 for each table
+  - Cant trigger Workflows
+
+Choices columns:
+  - Do not use to select categories instead create categories tables and reference them using look up value
+Primary name
+  - You can only have one primary column for each custom table
+
+Autonumber Column
+Autonumber columns appear in the Text category of columns when you create a new column.
+You can also activate autonumber functionality in an existing text column by opening the column and selecting Autonumber in the datatype dropdown.
+
+String prefixed number --> Contoso-1001, Contoso-1002
+Date prefixed number --> 2019-26-02-1000, 2019-27-02-1000
+
+
+Key
+  - A key can be made up of one or many columns. If you select multiple columns, then the key is called a compound key.
+  - You can create up to five keys for each table.
+
+Security technologies
+It's common to segment environments for development, test, and production.
+Production env includes access to data of Dataverse DB, Power Apps and Power Automate Flows
+
+Env Roles
+Environment Admin
+  Add or remove users
+  Provision a Dataverse DB for the ENV
+  View and manage all resources created within the env
+  Set data loss prevention policies
+Environment Maker (default association when user is added to new env)
+   can distribute the apps that they build in an environment to other users within an organization
+
+Dataverse uses role-based security to group together a collection of privileges.
+A key concept of Dataverse security to understand is that privileges are accumulative with the greatest amount of access prevailing.
+
+Record ownership is a choice that happens at the time the table is created and can’t be changed.
+Each user is a member of only one business unit, but a team can have user members from multiple business units.
+
+Performance considerations
+Keep the effective hierarchy security to 50 users or less under a manager/position.
+ create fewer business units and add hierarchy security.
+
+ Users or security groups can be assigned to these roles by a System Administrator from the Power Apps Administration Center.
