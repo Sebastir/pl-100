@@ -1,0 +1,108 @@
+Apparence of your app
+- Use Themes, have a specific set of default colors and visual elements, which alter the look and feel of your entire app.
+downside.
+- Date Picker is specific to Theme (cannto be )
+-no option to create a Custom theme for a canvas app and store it to be used for other apps.
+
+Control Properties
+- Fill
+- Hover
+- Border
+
+Typical Properties
+BorderColor
+BorderStyle (solid, dashed, dotted)
+Color (text color)
+Fill (background Color)
+
+Disabled Properties
+DisabledColor (Color Text when Display = Disabled)
+DisabledFill (Background Color when DisplayMode = Disabled)
+
+Hover Properties
+HoverColor (Color Text when Hover)
+HoverFill (BackgroundColor when hover)
+
+
+Shapes & Icon enhance User Experience of the APP
+By incorporating shapes and icons, you can save space and reduce clutter in your app,
+Example -->  Back icon control and set its OnSelect property to Back()
+Image --> transparency property to 0.5 Image position to central
+
+Personalization
+1. On the ribbon, select + Insert, expand Media, and then select Image.
+2. Set the Image property to this formula: User().Image
+3. On the ribbon, select + Insert, and then under Popular section select Text label:
+4. Set the Text property to this formula: User().FullName
+5. Move the label so it's below the image control.
+6. Add another label, and set its Text property to this formula: User().Email
+
+User().Email
+User().FullName
+User().Image
+
+Lock aspect ratio and lock orientation
+
+If you lock the app's orientation, the app retains the orientation that you specify.
+If you unlock the aspect ratio, the app adjusts to the aspect ratio of the device on which it's running.
+You can also modify the app's orientation by enabling Optimize embedding experience in Settings.
+
+Browse screen
+
+Gallery object display without body
+Details with Body
+
+Details screen
+
+Edit / Create screen
+Edit multi-line text
+
+Navigation Menu
+Sintax Navigate(Screen [, Transition [, UpdateContextRecord ]])
+Navigation allows users to go from one screen into another within an app.
+OnSelect property of a button --> Navigate(Screen2,ScreenTransition.Cover) || Back( ScreenTransition.Cover )
+
+ScreenTransition.Cover - The new screen slides into view from right to left, covering the current screen.
+ScreenTransition.CoverRight - The new screen slides into view from left to right, covering the current screen.
+ScreenTransition.Fade - The current screen fades away to reveal the new screen.
+ScreenTransition.None - (Default) - The new screen quickly replaces the old screen.
+ScreenTransition.UnCover - The current screen slides out of view from right to left, uncovering the new screen.
+ScreenTransition.UnCoverRight - The current screen slides out of view from left to right, uncovering the new screen.
+
+Purpose of Hidden Screens
+
+- Documentation Screen:
+    Make notes or add documentation about certain aspects of how the app functions.
+- Settings screen:
+    It can be a place to keep track of settings, such as formatting or colors.
+- Special Permissions screens
+    Using a Documentation screen is a great technique to provide instructions to other developers of the app.
+
+Lab on Navigation
+https://learn.microsoft.com/en-us/training/modules/navigation-canvas-app/3-more-ways-to-use-navigate-function
+
+
+Versions
+- Navigate to make.powerapps.com
+- select the ellipsis from the app
+- click on details
+- Select the version tab
+
+
+Core properties of Controls
+- Default - The initial value of a control before it’s changed by the user.
+- DelayOutput - Set to true to delay action during text input.
+- DisplayMode - Values can be Edit, View, or Disabled.
+- Items - The source of data that appears in a control such as a gallery, list, or chart.
+- OnChange - How the app responds when the user changes the value of a control.
+- OnSelect - How the app responds when the user taps or selects a control.
+- Reset - Whether a control reverts to its default value.
+- Tooltip - Explanatory text that appears when the user hovers over a control.
+- Visible - Whether a control appears or is hidden.
+
+Media
+Bar Code Scanner
+- The control doesn't support scanning in a web browser.
+Audio --> play sounds from a file
+Microphone --> record sounds from their devices
+Audio is stored in 3gp format in Android, AAC format in iOS, and OGG format in web browsers.
