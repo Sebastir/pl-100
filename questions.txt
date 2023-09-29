@@ -96,3 +96,9 @@ Version 4 of the app is created.
 
 30. Users report they cannot filter out requests in the global filter in the dashboard based on a newly created Yes/No column.
 Enable Appears in global filter in interactive experience for the column.
+
+31. The university wants to find students based on the courses in which they enroll.
+Filter, LookUp
+
+32.You need to restore a previously saved version.
+The canvas app details screen lists all versions and allows users to restore previous versions.
