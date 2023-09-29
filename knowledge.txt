@@ -1,0 +1,100 @@
+Power App Variables, Controls, Functions.
+
+Power App Functions
+The Patch function is used to create and modify records in complex situations,
+ such as when you do updates that require no user interaction or use forms that span multiple screens.
+The Set function is used to create a global variable, which is available throughout the app across all the screens.
+Patch function is used to modify records of a data source.
+The Language function returns the language, script, and region of the logged-in user.
+The Location signal returns the location, IP Address of the device based on the global positioning system (GPS)
+
+Variables
+Global variables are used to hold a number, text string, Boolean, record, table,
+ and so on that can be referenced from anywhere in the app.
+
+
+
+Collection
+A collection is a form of a variable that holds a table of values that can be referenced from anywhere in the app
+
+ClearCollect function removes all existing data from the named collection, and then writes in the new set of data to the collection.
+ The Collect function will add data to the collection but will not remove old data from the collection.
+
+Connection
+A cloud SQL Server database sync with a dataflow would be valid if the transactions were in SQL Server online.
+An on-premises data gateway (personal mode) can be used only with Power BI,
+An on-premises data gateway must be installed to connect to the on-premises system.
+
+Chat bot
+Topics are conversation triggers and dictate how a conversation will proceed.
+entities refer to categories of information that exist, like email, city, zip code, or phone numbers.
+Variables in Power Virtual Agents are used to store user responses for further use in the chat conversation.
+Using channels, you can publish a chatbot to Microsoft Teams, Live websites, mobile apps, etc.
+
+Desktop Automate Flow
+The required prerequisites for setting a desktop flow that is triggered by Power Automate includes:
+ the virtual or physical machine to run the process & a work account to connect.
+
+Power Automate
+
+App checker checks both flows and functionality of the app to ensure it works as intended.
+Solution checker is only for single solutions at a time.
+Monitor shows bugs in code in real time as you run the app.
+Flow checker is only for checking Power Automate flows.
+Canvas apps can only use or trigger instant cloud flows.
+
+You share the flow with run-only user access.
+A run-only user can find a shared cloud flow in the Power Automate mobile app and in the My flows cloud flow list.
+
+
+ Canvas App
+ Canvas apps can be embedded only inside a model-driven app, not on custom-built apps.
+  Canvas apps can only use or trigger instant cloud flows.
+Power BI
+Bubble charts are a great way to present financial data.
+A scatter chart is ideal for showing the relationship between two numerical values,
+Waterfall charts are useful to compare changes across time or categories.
+A line chart is a visualization chart used to represent a series of data points connected by a straight line. (continuos data) - time series forecasting - stock market trend analysis
+You can create a dashboard with up to six different visuals
+You must create the views for each requirement to add them to the dashboard.
+Dataflows help organizations unify data from disparate sources.
+Publishing the Power BI report to a Power BI Premium workspace is a way of sharing the report with users
+Adding a Power BI tile in a canvas app displays Power BI information within the app.
+You cannot share directly from Power BI Desktop
+The Send Link is another mechanism of sharing a report, but it is only available through the Power BI service experience.
+ reduce the number of Power BI tiles on the home screen to three per the documented recommendation.
+ The LoadPowerBIContent can be used to selectively load and unload a tile if and when a user needs to see the tile or needs to interact with the tile.
+Power BI Service includes a collection of ready-made visuals that are prearranged on dashboards and reports for a company.
+Power BI Desktop is used to create and develop bespoke Power BI reports.
+A treemap is used to display large amounts of hierarchical data.
+A combo chart is a multi-series chart that can have two Y axes.
+ A funnel visualization uses a linear process that has connected stages, where items flow sequentially from one stage to the next.
+ A matrix table is a grid that contains related data in a logical series of rows and columns.
+When enabled, Export to PDF is available only for users who are in the same Power BI tenant.
+When visuals with wallpaper are exported to PDF, the wallpaper will not be exported.
+Export to PDF is available from both Power BI Desktop and Power BI Service.
+Visuals with themes that use a custom font will be replaced with a default font when exported to PDF.
+
+AI Builder
+The prebuilt model does not need to be trained. It works natively with Power Automate, and there is no minimum number of sample invoices needed.
+The key phrase extraction prebuilt model identifies the main points in a text document.
+he text translation prebuilt model translates text data in real time across more than 60 languages.
+Receipt processing is a prebuilt model that uses state-of-the-art optical character recognition (OCR) to detect printed and handwritten text and extract key information from receipts.
+Training a custom object detection AI Builder model requires a minimum of 15 images for each of the objects that you want to tag. An image can contain multiple objects.
+The forms processing model needs to be configured and trained to use it.
+The text recognition model can scan PDFs and extract information without needing to configure or train the model.
+
+
+Power Pages
+Power Pages supports the use of Liquid templates, is fully form factor responsive, and is natively connected to the Dataverse.
+
+
+Dataverse
+The restrict behavior prevents the primary table row (Account) from being deleted when related table rows exist
+The Remove Link behavior removes only the lookup value for all related rows, orphaning the rows from the related account.
+The decimal number type of column supports up to 10 decimal places.
+When a user uses Search in view, the search is performed on columns, which are configured in the Find Columns of the table.
+Setting the scope to Entity enforces this behavior within the canvas app as well as any model-driven apps.
+When form access is defined through security roles, if a user has not logged in with a security role that is configured for any form,
+ the form enabled for fallback will be displayed even if the user does not have any other access permissions.
+Enabling the Appears in global filter in interactive experience column option allows you to use the column as a filter condition in the interactive experience dashboard.

@@ -1,0 +1,11 @@
+Typical Flow erros
+Authentication errors (code 401 - 403). Fix Connection is the solution (Credentials)
+Config issues (code 400 - 404). "Bad request" - "not found". fix issues inside the flow definition
+Temporry issues (code 500 - 502). Select Resubmit
+Issues with your pricing plan (Documentation - Pricing)
+Issues with your data (Settings - Admin Center - )
+
+Each account can have
+600 flows
+50 custom connections
+20 per API or 100 connections in total

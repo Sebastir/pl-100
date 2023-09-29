@@ -1,0 +1,8 @@
+Responsive Design for both Tablets or Mobile
+- Scale to fit OFF
+- Lock aspect ratio OFF
+- Lock Orientation OFF
+
+
+To identify bottlenecks and performance of your mobile application,
+ you can use the performance monitoring tool within the Power Apps Studio designer.

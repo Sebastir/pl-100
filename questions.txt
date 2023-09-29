@@ -1,0 +1,98 @@
+1. In Model driven App. You need to configure app navigation for users. Where should you perform the configuration?
+The site map designer is used to configure the navigation available within a model-driven app
+
+2. Approvals
+Power Automate Approval Center, Received approval email, Power Automate mobile app.
+
+3. You need to define the conversation path between employees and the bot.
+Topics
+
+4. extend the functionality of an existing model-driven app.
+Ensure SDK message processing steps are enabled during import.
+
+5. You export the solution and import it into another environment.
+You exported and imported an unmanaged solution.
+
+6. You observe that emails are not triggered.
+Add the Power Automate flows to a new solution. Export from the development environment and import into the test environment.
+
+7.You need to resolve missing dependency before trying to reimport.
+Add the missing dependencies to the solution in the development environment and export the solution again.
+Add the missing dependencies to a new solution in the development environment and export the solution again.
+
+8.Sharing an app with an user
+The user must be added to the environment.
+The user requires a Power Apps license.
+
+9. notify users that app was shared with theme
+Provide users with a direct web link for the app.
+
+10.You need to trigger the desktop flow to run on a weekly schedule by using a Microsoft Power Automate cloud flow.
+machine, work account
+
+11. You need to enable sharing of these apps with external users.
+Canvas App, Power App portal
+
+12. Data model requirements:
+    Link related stakeholders together and describe the relationship between the stakeholders.
+    Associate free form text with a customer record and have the text appear in the timeline.
+Connection, Annotation
+
+13. You want to use document management within the app.
+Sharepoint Online & Microsoft OneDrive
+
+14. Users report that the home screen is slow and the Power BI tiles take a long time to load.
+Reduce the number of Power BI tiles to three on the home screen.
+Load the Power BI tiles only as needed by using the LoadPowerBIContent property.
+
+15.You are designing a Microsoft Power BI report for a sales organization.
+Connect to the Opportunity fields by using the PowerBIIntegration object.
+Save and publish the app.
+Share the app and report with users.
+
+16. What is the minimum number of images you should use to train AI Builder
+15
+
+17. You need to ensure that account records cannot be deleted when related outstanding payments remain.
+Restrict
+
+18. In the app, users must capture readings that can have a precision of up to 10 decimal places.
+Decimal
+
+19.Custom table in Dataverse and users enter through canvas app
+Setting the scope to Entity enforces this behavior within the canvas app as well as any model-driven apps.
+
+20. you must clear the value of a column of the primary contact record.
+Use the Update a Row action. Use the Dynamic content option to set the value of the column as expression value null.
+
+21. The app maker did not create the app within a custom solution nor add it to an existing solution.
+Default solution
+
+22. You want to interpret errors by using only one tool.
+App checker
+
+23. You share the flow with run-only user access.
+cloud flow list
+Power Automate mobile app
+
+24. You require a Microsoft Power Automate flow that is triggered from within the canvas app.
+instant cloud flow inside the solution
+
+25. An external user tries to export a report from a shared dashboard but Export to PDF is unavailable.
+Export to PDF is available only to users within the organization.
+
+26. Limit the availble views and forms
+Dynamic 365 Sales app - Power BI
+
+27. When users without the correct security role sign in, the forms must display only limited customer information.
+Enable the form as a fallback form for the account table.
+
+28. If the email notification financial
+run after
+
+29. Users report a bug with the current live version of the app, version 3.
+Version 3 of the app remains as the live version.
+Version 4 of the app is created.
+
+30. Users report they cannot filter out requests in the global filter in the dashboard based on a newly created Yes/No column.
+Enable Appears in global filter in interactive experience for the column.

@@ -1,0 +1,7 @@
+POWER BI Desktop --> creation of dashboard
+Power BI Service --> Publishing / Sharing
+Power BI Mobile --> COnsumption
+
+Building Blocks
+Reports: Visualizations and dataset created with Power BI Desktop
+Dashboard: Tiles from reports visualization
