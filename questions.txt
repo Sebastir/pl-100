@@ -102,3 +102,8 @@ Filter, LookUp
 
 32.You need to restore a previously saved version.
 The canvas app details screen lists all versions and allows users to restore previous versions.
+
+33. You need to implement a fulfillment team app that displays order information and real-time status information of outstanding orders.
+a dashboard in a model-driven app with an embedded Power BI report that displays order status
+
+34.

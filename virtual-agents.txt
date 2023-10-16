@@ -1,0 +1,31 @@
+Select Power Virtual Agents app
+Provide a name and select language (you cant change this after)
+
+Trigger Phrases --> Detect when user asks a question
+We recommend that you have 5 to 10 trigger phrases of common ways that your users would request help on the topic.
+Conversation Nodes --> how to handle each request
+Conversation nodes define how the chatbot responds and if actions are required.
+  1. Ask a question: get a input from user
+  2. Add a condition: Add branching logic
+  3. Call an action : Call Power Automate Flows
+  4. Show a message : How the chatbot reply to a user
+  5. End with survey: Conversation ends, a survey appears
+
+Ask a question can be used with Identify property
+Identify - Select Multiple choice options.
+ The Identify field is where you indicate what type of response the chatbot is listening for.
+
+Options
+Available options are listed
+
+
+
+System Topics
+- handle greetings
+- escalating
+- starting over
+- saying goodbye
+- end of conversation
+- thank you
+- confirm success
+- confirm failure

@@ -74,6 +74,10 @@ When enabled, Export to PDF is available only for users who are in the same Powe
 When visuals with wallpaper are exported to PDF, the wallpaper will not be exported.
 Export to PDF is available from both Power BI Desktop and Power BI Service.
 Visuals with themes that use a custom font will be replaced with a default font when exported to PDF.
+Power BI reports can update data in real time and can be embedded in a model-driven app dashboard.
+Power BI tiles in canvas apps do not update automatically and cannot display data in real-time.
+An unattended desktop flow can run on a dedicated virtual machine and does not require any user interaction.
+
 
 AI Builder
 The prebuilt model does not need to be trained. It works natively with Power Automate, and there is no minimum number of sample invoices needed.
@@ -87,7 +91,7 @@ The text recognition model can scan PDFs and extract information without needing
 
 Power Pages
 Power Pages supports the use of Liquid templates, is fully form factor responsive, and is natively connected to the Dataverse.
-
+Power Apps portals can store and retrieve data from Dataverse only.
 
 Dataverse
 The restrict behavior prevents the primary table row (Account) from being deleted when related table rows exist
